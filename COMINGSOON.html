@@ -4,6 +4,7 @@
 	<title>Lendbak coming soon</title>
 	<link rel="stylesheet" type="text/css" href="COMINGSOON.css" />
 	<script src="https://kit.fontawesome.com/12c97a8659.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="COMINGSOON.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
 	
@@ -20,10 +21,10 @@
 		  <!-- days --> 
 		<div class="clock-item clock-days">
 		<div class="wrap">
-		<div class="inner">
+		<div class="inner" style="background-color: #FF8484">
 		<div id="canvas_days" class="clock-canvas"></div>
 		<div class="text">
-		<p class="val">0</p>
+		<p class="val" id="day-val">0</p>
 		<p class="type-days type-time">Days</p>
 		</div>
 		</div>
@@ -32,10 +33,10 @@
 		<!-- hours --> 
 		<div class="clock-item clock-hours">
 		<div class="wrap">
-		<div class="inner">
+		<div class="inner" style="background-color: #1F82DF"> 
 		<div id="canvas_hours" class="clock-canvas"></div>
 		<div class="text">
-		<p class="val">0</p>
+		<p class="val" id="hour-val">0</p>
 		<p class="type-hours type-time">Hours</p>
 		</div>
 		</div>
@@ -44,10 +45,10 @@
 		<!-- minutes --> 
 		<div class="clock-item clock-minutes">
 		<div class="wrap">
-		<div class="inner">
+		<div class="inner" style="background-color: black">
 		<div id="canvas_minutes" class="clock-canvas"></div>
 		<div class="text">
-		<p class="val">0</p>
+		<p class="val" id="min-val">0</p>
 		<p class="type-minutes type-time">Minutes</p>
 		</div>
 		</div>
@@ -56,10 +57,10 @@
 		<!-- seconds --> 
 		<div class="clock-item clock-seconds">
 		<div class="wrap">
-		<div class="inner">
+		<div class="inner" style="background-color: #F2C94C">
 		<div id="canvas_seconds" class="clock-canvas"></div>
 		<div class="text">
-		<p class="val">0</p>
+		<p class="val" id="sec-val">0</p>
 		<p class="type-seconds type-time">Seconds</p>
 		</div>
 		</div>
@@ -77,8 +78,8 @@
   	  <div id="input-email">
         <input type="email" id="email" placeholder="Email">
         <i class="far fa-envelope"></i>
+        <button class="button" onclick="submit()">Subscribe</button>
       </div>
-      <button class="button" onclick="submit()">Subscribe</button>
     </div>
     <div id="footer">
     	<a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
