@@ -1,0 +1,171 @@
+body{
+  background-image: url("smartmockups_khorsff8 1.png"), url("image 45.png");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+}
+#container{
+  padding: 3% 7%;
+
+}
+#top{
+  width: 100%;
+  display: flex;
+}
+#logo{
+  width: 60%;
+}
+#countdown{
+  width: 40%;
+}
+#logo p{
+  font-family: Circular Std;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #828282;
+}
+#mid{
+  width: 50%;
+  padding-top: 8%;
+}
+#mid p{
+font-family: Circular Std;
+font-size: 18px;
+font-style: normal;
+font-weight: 450;
+line-height: 23px;
+letter-spacing: 0.02em;
+color: #828282;
+
+
+}
+#mid h1{
+ font-family: Circular Std;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: 95px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+#signup{
+  display: inline-flex;
+  width: 60%;
+}
+#input-email{
+  position: relative;
+  width: 90%;
+  height: 40px;
+}
+#email{
+  width: 50%;
+  height: 40px;
+  padding-left:40px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  color: #3E3E3E;
+  font-family: Circular Std;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#input-email i {
+  position: absolute;
+  left:5px;
+  top: 7px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+  color: #000000;
+}
+.button{
+  background: linear-gradient(158.07deg, #6FA4FF 9.96%, #3580FF 87.76%);
+  border: none;
+  color: #FFFFFF;
+  border-radius:15px;
+  text-align: center;
+  width: 20%;
+  height: 50px;
+  cursor: pointer;
+  right:50px;
+  font-family: Circular Std;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+}
+#footer{
+  padding-top: 15%;
+  font-size: 30px;
+  margin-right: 5%;
+}
+#footer i{
+  font-size: 30px;
+  margin-right: 2%;
+  color: #2682DD;
+}
+.countdown-container {
+position: relative;
+top: 30%;
+-webkit-transform: translateY(-50%);
+-moz-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+.clock-item .inner {
+height: 0px;
+padding-bottom: 100%;
+position: relative;
+width: 100%;
+}
+.clock-canvas {
+background-color:	#F8F8FF;
+border-radius: 50%;
+height: 0px;
+padding-bottom: 100%;
+}
+.text {
+font-size: 30px;
+font-weight: bold;
+margin-top: -50px;
+position: absolute;
+top: 50%;
+text-align: center;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+width: 100%;
+}
+.text .val {
+font-family: Circular Std;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 95px;
+letter-spacing: -0.03em;;
+color: #272D4E;
+}
+.text .type-time {
+font-family: Circular Std;
+font-size: 18px;
+font-style: normal;
+font-weight: 450;
+line-height: 2px;
+letter-spacing: 0em;
+color: #94A2B3;
+}
+ @media (min-width: 768px) and (max-width: 991px) {
+.clock-item {
+margin-bottom: 30px;
+}
+}
+ @media (max-width: 767px) {
+.clock-item {
+margin: 0px 30px 30px 30px;
+}
+}
