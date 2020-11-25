@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var start = Date.parse('Sat Nov 20 19:20:44 +0000 2020')/1000;
-  var end = Date.parse('Sun Dec 20 19:20:44 +0000 2020')/1000;
+  var end = Date.parse('Sun Dec 20 12:00:00 +0000 2020')/1000;
   var now = new Date().getTime() / 1000; 
  $('.countdown').final_countdown({
         'start': start,
@@ -23,4 +23,18 @@ function submit(){
     message.innerHTML = "We'll keep you informed!";               
     document.getElementById('mid').appendChild(message);
   }
+  
+function formSubmit(e) {
+    e.preventDefault(); // prevent actual form submit
+    var form = $("#myForm");
+    var url = form.attr('action'); //get submit url [replace url here if desired]
+    $.ajax({
+         type: "POST",
+         url: url,
+         data: form.serialize(), // serializes form input
+         success: function(data){
+             console.log(data);
+         }
+    });
+}
 }
