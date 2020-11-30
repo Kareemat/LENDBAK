@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var start = Date.parse('Sat Nov 20 19:20:44 +0000 2020')/1000;
-  var end = Date.parse('Sun Dec 20 12:00:00 +0000 2020')/1000;
+  var end = Date.parse('Thu Dec 10 16:00:00 +0000 2020')/1000;
   var now = new Date().getTime() / 1000; 
  $('.countdown').final_countdown({
         'start': start,
@@ -27,7 +27,8 @@ $(document).on('submit', '#myForm', function(e){
       success:function(){
         document.getElementById('mid').innerHTML = '';
         document.getElementById("signup").style.display = "none";
-        var message = document.createElement("h1");                
+        var message = document.createElement("h2"); 
+        message.id = "displaymessage"               
         message.innerHTML = "We'll keep you informed!";               
         document.getElementById('mid').appendChild(message);
       },
